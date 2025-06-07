@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+}
+
+#color-display {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+  margin: 10px auto;
+  line-height: 100px; /* Vertically center text if any */
+  font-size: 12px; /* Adjust as needed */
+  color: white; /* Default text color, change if needed based on background */
+  text-shadow: 1px 1px 2px black; /* Make text more readable on various backgrounds */
+}
+
+#pick-color-button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#pick-color-button:hover {
+  background-color: #0056b3;
+}
