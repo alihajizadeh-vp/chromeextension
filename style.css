@@ -1,19 +1,20 @@
 body {
   font-family: sans-serif;
-  width: 200px;
+  width: 200px; /* Adjusted width for simpler view */
   padding: 10px;
   text-align: center;
 }
 
-#color-display {
+/* Was #color-display-preview, now #color-display with class .color-preview-simple */
+#color-display.color-preview-simple {
   width: 100px;
   height: 100px;
   border: 1px solid #ccc;
   margin: 10px auto;
-  line-height: 100px; /* Vertically center text if any */
-  font-size: 12px; /* Adjust as needed */
-  color: white; /* Default text color, change if needed based on background */
-  text-shadow: 1px 1px 2px black; /* Make text more readable on various backgrounds */
+  line-height: 100px;
+  font-size: 12px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
 }
 
 #pick-color-button {
@@ -30,101 +31,16 @@ body {
   background-color: #0056b3;
 }
 
-/* Styles for new color format display */
-#color-display-preview { /* Renamed from color-display */
-  width: 50px; /* Smaller preview next to button */
-  height: 30px;
-  border: 1px solid #ccc;
-  margin-right: 10px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.main-controls {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-#pick-color-button {
-  padding: 8px 12px; /* Slightly smaller button */
-}
-
-#color-info-section {
-  margin-top: 15px;
-  border-top: 1px solid #eee;
-  padding-top: 10px;
-}
-
-.color-format {
-  display: flex;
-  align-items: center;
-  margin-bottom: 8px;
-}
-
-.format-label {
-  min-width: 40px; /* Align inputs */
-  font-size: 0.9em;
-}
-
-.color-value-input {
-  flex-grow: 1;
-  padding: 4px;
-  font-size: 0.9em;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  margin-right: 5px;
-  background-color: #f9f9f9;
-}
-
-.copy-button {
-  padding: 4px 8px;
-  font-size: 0.8em;
-  background-color: #e0e0e0;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-.copy-button:hover {
-  background-color: #d0d0d0;
-}
-
-/* Styles for history (basic) */
-#history-section {
-  margin-top: 15px;
-  border-top: 1px solid #eee;
-  padding-top: 10px;
-}
-
-#color-history-display {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-
-.history-swatch {
-  width: 20px;
-  height: 20px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-.history-swatch:hover {
-  border-color: #888;
-}
-
-h3, h4 {
-  margin-top: 0;
-  margin-bottom: 8px;
-  font-size: 1em;
-  color: #333;
-}
-
-body {
-  width: 250px; /* Increased width for more info */
-}
-
-/* Ensure main color display from previous step is now color-display-preview */
-/* The old #color-display is now effectively #color-display-preview */
+/*
+  Removed styles for:
+  - .main-controls (no longer exists)
+  - #color-info-section (no longer exists)
+  - .color-format (no longer exists)
+  - .format-label (no longer exists)
+  - .color-value-input (no longer exists)
+  - .copy-button (no longer exists)
+  - #history-section (no longer exists)
+  - #color-history-display (no longer exists)
+  - .history-swatch (no longer exists)
+  - h3, h4 (no longer used in this simple version)
+*/
