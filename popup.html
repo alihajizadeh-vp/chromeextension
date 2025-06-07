@@ -5,8 +5,40 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <div id="color-display"></div>
-  <button id="pick-color-button">Pick Color</button>
+  <div class="main-controls">
+    <div id="color-display-preview" class="color-preview"></div>
+    <button id="pick-color-button">Pick Color</button>
+  </div>
+
+  <div id="color-info-section" style="display: none;">
+    <h3>Color Details:</h3>
+
+    <div class="color-format">
+      <span class="format-label">HEX:</span>
+      <input type="text" id="hex-value" readonly class="color-value-input">
+      <button id="copy-hex" class="copy-button" title="Copy HEX">Copy</button>
+    </div>
+
+    <div class="color-format">
+      <span class="format-label">RGB:</span>
+      <input type="text" id="rgb-value" readonly class="color-value-input">
+      <button id="copy-rgb" class="copy-button" title="Copy RGB">Copy</button>
+    </div>
+
+    <div class="color-format">
+      <span class="format-label">HSL:</span>
+      <input type="text" id="hsl-value" readonly class="color-value-input">
+      <button id="copy-hsl" class="copy-button" title="Copy HSL">Copy</button>
+    </div>
+  </div>
+
+  <div id="history-section" style="display: none;">
+    <h4>History:</h4>
+    <div id="color-history-display">
+      <!-- Color history swatches will be added here by JS -->
+    </div>
+  </div>
+
   <script src="popup.js"></script>
 </body>
 </html>

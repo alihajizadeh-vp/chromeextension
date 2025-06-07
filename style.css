@@ -29,3 +29,102 @@ body {
 #pick-color-button:hover {
   background-color: #0056b3;
 }
+
+/* Styles for new color format display */
+#color-display-preview { /* Renamed from color-display */
+  width: 50px; /* Smaller preview next to button */
+  height: 30px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main-controls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#pick-color-button {
+  padding: 8px 12px; /* Slightly smaller button */
+}
+
+#color-info-section {
+  margin-top: 15px;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.color-format {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.format-label {
+  min-width: 40px; /* Align inputs */
+  font-size: 0.9em;
+}
+
+.color-value-input {
+  flex-grow: 1;
+  padding: 4px;
+  font-size: 0.9em;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-right: 5px;
+  background-color: #f9f9f9;
+}
+
+.copy-button {
+  padding: 4px 8px;
+  font-size: 0.8em;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.copy-button:hover {
+  background-color: #d0d0d0;
+}
+
+/* Styles for history (basic) */
+#history-section {
+  margin-top: 15px;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+#color-history-display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.history-swatch {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.history-swatch:hover {
+  border-color: #888;
+}
+
+h3, h4 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1em;
+  color: #333;
+}
+
+body {
+  width: 250px; /* Increased width for more info */
+}
+
+/* Ensure main color display from previous step is now color-display-preview */
+/* The old #color-display is now effectively #color-display-preview */
